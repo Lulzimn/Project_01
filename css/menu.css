@@ -468,7 +468,7 @@ body {
         flex-direction: column;
         padding: 15px 20px;
         gap: 10px;
-        min-height: auto;
+        min-height: initial;
     }
 
     .navbar-menu {
