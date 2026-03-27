@@ -1,0 +1,89 @@
+{
+    "categories": {
+        "Breakfast": [
+            {
+                "name": "Pancakes",
+                "price": 5.0,
+                "image": "img/pancakes.webp",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            },
+            {
+                "name": "Omlette",
+                "price": 5.6,
+                "image": "img/omlette.webp",
+                "categoryDescription": "Eggs, cheese, and veggies cooked to perfection",
+                "rating": 4.8,
+                "preparationTime": "10-15 mins"
+            }
+        ],
+        "Lunch": [
+            {
+                "name": "Margarita",
+                "price": 6.25,
+                "image": "img/pizza.webp",
+                "categoryDescription": "Classic Margherita pizza with fresh tomatoes and basil",
+                "rating": 4.6,
+                "preparationTime": "10-20 mins"
+            },
+            {
+                "name": "Salad",
+                "price": 4.25,
+                "image": "img/salad.webp",
+                "categoryDescription": "A fresh mix of greens, tomatoes, and cucumbers",
+                "rating": 4.6,
+                "preparationTime": "10-15 mins"
+            },                 
+            {
+                  "name": "Steak",
+                  "price": 12.50,
+                  "image": "img/steak.webp",
+                  "categoryDescription": "Juicy grilled steak cooked to perfection",
+                  "rating": 4.9,
+                  "preparationTime": "10-35 mins"},
+            {
+                   "name": "Omlette",
+                     "price": 6.25,
+                   "image": "img/omlette.webp",
+                    "categoryDescription": "Eggs, cheese, and veggies cooked to perfection",
+                    "rating": 4.6,
+                    "preparationTime": "10-20 mins"
+            }
+                    
+          ],
+          "Desserts": [
+    {
+        "name": "Pancakes",
+        "price": 6.25,
+        "image": "img/pancakes.webp",
+        "categoryDescription": "Delicious pancakes with syrup and butter",
+        "rating": 4.6,
+        "preparationTime": "10-15 mins"
+    },
+    {
+        "name": "Ice Cream",
+        "price": 4.25,
+        "image": "img/icecream.png",
+        "categoryDescription": "Creamy ice cream in various flavors",
+        "rating": 4.6,
+        "preparationTime": "5 mins"
+    }                 
+  ],
+  "Dinner": [
+    {
+        "name": "Margarita",
+        "price": 6.25,
+        "image": "img/pizza.webp",
+        "rating": 4.6,
+        "preparationTime": "10-15 mins"
+    },
+    {
+        "name": "Salad",
+        "price": 4.25,
+        "image": "img/salad.webp",
+        "rating": 4.6,
+        "preparationTime": "10-15 mins"
+    }                 
+        ]
+    }
+}

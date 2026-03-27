@@ -1,0 +1,40 @@
+.primary-color {
+    font-size: var(--title);
+    font-weight: 400;
+    font-family: var(--handlee-font);
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+.text-gray {
+    color: var(--gray-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+  .bg-light {
+    background-color: var(--light-color);
+    }
+
+
+
+
+
+
+
+
+
+
+
+

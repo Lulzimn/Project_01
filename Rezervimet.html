@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorant - Regjistrimi i Tavolinave</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style 01.css">
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="navbar-logo">
+            <a href="index.html" class="text-white">Rastaurantista</a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="menu.html" class="text-white">Menu</a></li>
+            <li><a href="Rezervimet.html" class="text-white active">Rezervimet</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Menaxhimi i Tavolinave</h1> 
+        
+        <!-- Formulari për regjistrimin e një rezervimi -->
+        <form id="rezervimiForm">
+            <label for="emri">Emri i klientit:</label>
+            <input type="text" id="emri" required>
+
+            <label for="tavolina">Kemi 20 tavolina të disponueshme.
+                <p>Shkruani numrin e tavolinës që dëshironi të rezervoni.</p>
+                <p>Numri i tavolinës:</p>
+            </label>
+            <input type="number" id="tavolina" min="1" max="20" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="ora">Ora:</label>
+            <input type="time" id="ora" required>
+
+            <button type="submit">Regjistro Rezervimin</button>
+        </form>
+
+        <!-- Lista e rezervimeve ekzistuese -->
+        <h2>Rezervimet aktuale</h2>
+        <div id="rezervimetLista">
+            <!-- Rezervimet do të shfaqen këtu nga JavaScript -->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

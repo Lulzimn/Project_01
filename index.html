@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastaurantista - Home</title>
+   
+<!-- Fonts  -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inspiration&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<!-- CSS Files -->
+     <link rel="stylesheet" href="css/variables.css">
+     <link rel="stylesheet" href="css/common.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+     <script src="js/hero.js" defer></script>
+     <script src="js/subscribe.js" defer></script>
+     <script src="js/animaciones.js" defer></script>
+     <script src="js/testimonials.js" defer></script>
+
+
+
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+     <!-- Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"></head>
+<body>
+
+   
+    
+         <nav class="navbar bg-primary ">
+           <div class="navbar-logo"> 
+            <a href="index.html" class="text-white">Rastaurantista Project</a>
+        </div>
+         <ul class="navbar-menu">
+             <li><a href="index.html" class="text-white active">Home</a></li>
+             <li><a href="menu.html" class="text-white">Menu <i class="fa-solid fa-cart-shopping"></i> <span id="cart-badge" class="badge">0</span></a></li>
+             <li><a href="Rezervimet.html" class="text-white">Contact</a></li>
+         </ul>
+        </nav>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            Order your <br>
+            <span>Favorite Food</span>
+        </h1>
+        <p class="text-gray">Delicious food <span class="text-black">delivered</span> to your door.</p>
+    </div>
+    
+    <!-- left side - Food carousel -->
+    <div class="hero-carousel">
+        <div class="order-info">
+            <h3 class="order-info-total">Total: <span class="price" id="order-total">CHF0.00</span></h3>
+            <div class="order-info-buttons">
+                <div class="quantity-selector"> 
+                    <button type="button" class="quantity-btn" id="decrease-quantity" title="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                    <span id="quantity" class="quantity">1</span>
+                    <button type="button" class="quantity-btn" id="increase-quantity" title="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <button class="order-btn" id="add-to-cart">Add to Cart
+                    <span class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="food-carousel">
+            <button type="button" class="carousel-arrow left-arrow" title="Previous food item">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="img/pizza.webp" width="100px" alt="Margarita">
+                    <p>Margarita <br> 
+                        <span class="item-price">12.99</span>
+                        <span class="valute">$</span>
+                    </p>
+                </div>
+
+                <div class="food-item">
+                    <img src="img/pizza.webp" width="100px" alt="Margarita">
+                    <p>Margarita <br> 
+                        <span class="item-price">12.99</span>
+                        <span class="valute">$</span>
+                    </p>
+                </div>
+
+                <div class="food-item">
+                    <img src="img/pizza.webp" width="100px" alt="Margarita">
+                    <p>Margarita <br> 
+                        <span class="item-price">12.99</span>
+                        <span class="valute">$</span>
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" class="carousel-arrow right-arrow" title="Next food item">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- right side - Food image -->
+    <div class="hero-image">
+        <img src="img/pizza.webp" alt="Margarita Pizza" class="hero-main-image">
+        <div class="food-details">
+            <div class="food-header">
+                <h2 class="food-name">Margarita</h2>
+                <div class="food-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span id="food-rating">4.9</span>
+                </div>
+            </div>
+            <div class="prepare-time">
+                <i class="fa-regular fa-clock"></i>
+                <span id="prepare-time">13-16 mins</span>
+            </div>
+        </div>
+    </div>
+
+    <img src="img/hero-bg.jpg" alt="Foto de fondo" class="hero-bg">
+
+</section>
+
+<!-- Order Steps -->
+<section class="order-steps bg-light">
+    <h2 class="text-primary">Order with style</h2>
+
+        <div class="order-steps-container">
+            <div class="order-step">
+               <img src="img/pasta.svg" alt="icon of pasta" class="order-step-icon">
+                    <h3 class="order-step-title">Chose</h3>
+                     <p class="order-step-description">Select your favorite dishes from our menu and add them to your cart.
+                     </p>
+            </div>
+             
+            <div class="order-step">
+                <img src="img/pizza.svg" alt="icon of delivery" class="order-step-icon">
+                <h3 class="order-step-title">Order</h3>
+                <p class="order-step-description">Our chefs will prepare your order with care and attention to detail.</p>
+            </div>
+            
+            <div class="order-step">
+                <img src="img/risotto.svg" alt="icon of delivery" class="order-step-icon">
+                <h3 class="order-step-title">Enjoy</h3>
+                <p class="order-step-description">Receive your delicious meal at your doorstep and savor every bite.</p>
+            </div>
+        </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+        <div class="cta-content text-white">
+            <h2 class="primary-title" >Original Italian Cuisine</h2>
+            <p class="cta-description">
+               Enjoy Italian food as if you were in Italy.
+               The taste that reminds you of everything.
+               Delicacies and cooking with pleasure
+            </p>
+        
+            <a href="menu.html" class="cta-button">Order Now</a>
+        </div> 
+</section>
+<!--statics Section-->
+<section class="statistics-section bg-light">
+    <div class="statistics-header"> 
+         <h1 class="primary-title text-primary">
+            We are the best in town. <br>
+             Taste the difference with us.
+         </h1>
+    </div>
+   
+    <div class="statistics-container">
+        <div class="stat-item">
+            <span class="stat-value" data-target="1000">1000+</span>
+            <p class="stat-description">Happy Customers</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" data-target="1000">1000+</span>
+            <p class="stat-description">Orders Delivered</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" data-target="1000">1000+</span>
+            <p class="stat-description">Website Visits</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+        <div class="cta-content text-white">
+            <h2 class="primary-title" >About Us</h2>
+            <p class="cta-description">
+               lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.
+            
+            </p>
+        </div> 
+</section>
+<!-- Subscribe Sections-->
+ 
+<section class="subscribe-section bg-primary">
+      <h2 class="primary-title-text text-white">Never miss a recipe!</h2>
+      <form class="subscribe-form text-white" id="subscribeForm">
+      <label for="checkbox" class="subscribe-checkbox">
+      subscribe to our newsletter
+<input
+type="checkbox" id="checkbox" name="checkbox"
+checked 
+/>
+
+</label>
+    <div class="subscribe-form-inline">
+<input
+type="email"
+id="subscriberEmail"
+placeholder="Your Email..."
+class="subscribe-input"
+/>
+<button type="submit" class="subscribe-button">
+Subscribe
+</button>
+</div>
+</form>
+</section>
+
+<section class="contact-selection bg-light">
+    <div class="contact-info">
+        <h3>Location</h3>
+        <p>Kappelstrasse 123 <br> Neuenhof</p>
+
+        <h3>Email</h3>
+        <p>info@example.com</p>
+        <h3>Phone</h3>
+        <p>(555) 123-4567</p>
+    </div>
+        
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21586.882706104345!2d8.304711867534781!3d47.443914955197464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479012db881a33df%3A0x267fbb62821edd6f!2s5432%20Neuenhof!5e0!3m2!1sen!2sch!4v1770929716377!5m2!1sen!2sch" width="700" height="500" title="Google Maps - Rastaurantista Location" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <a href="https://maps.app.goo.gl/RMCDnkiVCjo4mMPx8" class="directions-button text-white">Get directions</a>
+</section>
+
+<section class="Video-section">
+
+
+    <h2 class="primary-title-01 text-primary">Watch our video 
+       <p>Preparation by a professional chef</p>
+       </h2>
+    <div class="video-container">
+        <iframe width="560" height="330" src="https://www.youtube-nocookie.com/embed/xPPLbEFbCAo?si=0zL6g__6hJyQPR26&amp;controls=0&amp;start=9" title="YouTube video of professional chef preparing food" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<section class="email-section bg-light">
+    <h2 class="text-primary primary-title">Contact Us</h2>
+    
+    <div class="email-content">
+        <img src="img/email-bg.avif" alt="Contact illustration">
+        
+        <form class="email-form" id="contactForm">
+            <input type="text" id="name" placeholder="Name..." required>
+            <input type="email" id="email" placeholder="Email..." required>
+            <input type="text" id="subject" placeholder="Subject..." required>
+            <textarea id="message" placeholder="Message..." required rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <h2 class="text-primary primary-title">What Our Clients Say About Us</h2>
+    
+    <div class="testimonials-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+    <div class="testimonials-container">
+        <button type="button" class="testimonials-arrow left-arrow" title="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <div class="testimonials-wrapper">
+            <div class="testimonial-card">
+                <div class="testimonial-bg"></div>
+                <div class="testimonial-content">
+                    <img src="img/arbrim-thaci.webp" alt="Arbrim Thaci" class="testimonial-avatar">
+                    <h3 class="testimonial-name">Arbrim Thaci</h3>
+                    <p class="testimonial-position">CEO</p>
+                    <i class="fa-solid fa-quote-left testimonial-quote"></i>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-card active">
+                <div class="testimonial-bg"></div>
+                <div class="testimonial-content">
+                    <img src="img/enes-shala.png" alt="Enes Shala" class="testimonial-avatar">
+                    <h3 class="testimonial-name">Enes Shala</h3>
+                    <p class="testimonial-position">Lead Front-end</p>
+                    <i class="fa-solid fa-quote-left testimonial-quote"></i>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-bg"></div>
+                <div class="testimonial-content">
+                    <img src="img/violeta-thaci.webp" alt="Violeta Murati Thaci" class="testimonial-avatar">
+                    <h3 class="testimonial-name">Violeta Murati Thaci</h3>
+                    <p class="testimonial-position">Lead designer</p>
+                    <i class="fa-solid fa-quote-left testimonial-quote"></i>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim</p>
+                </div>
+            </div>
+        </div>
+        
+        <button type="button" class="testimonials-arrow right-arrow" title="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo-section">
+                <h2 class="footer-logo">Restaurantista</h2>
+                <h3 class="footer-tagline">Turn your home into restaurant with Restaurantista</h3>
+                <p class="footer-year">Restaurantista, 2026.</p>
+            </div>
+            <a href="#" class="footer-button">ORDER HERE</a>
+        </div>
+        
+        <hr class="footer-divider">
+        
+        <div class="footer-bottom">
+            <p class="footer-copyright">Lulzim WEB AG © 2026 Restaurantista.</p>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+ </body>
+</html>
+
+

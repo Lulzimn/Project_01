@@ -1,0 +1,14 @@
+/* Hauptfarbe */
+:root {
+    --main-color: #f58100;
+    --light-color: #f9f9f9;
+    --gray-color: #929292;
+    --primary-color: #e07800;
+
+    --title: 63px;
+    --irish-font: 'Irish Grover', system-ui, sans-serif;
+    --handlee-font: 'Handlee',  sans-serif;
+    --poppins-font: 'Poppins',  sans-serif;
+    --inspiration-font: 'Inspiration',  sans-serif;
+}
+
